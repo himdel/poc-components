@@ -2,10 +2,15 @@
   "name": "@himdel/poc-components",
   "version": "1.0.0",
   "description": "shared JS components based on patternfly 4 components and guidelines",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/himdel/poc-components.git"
@@ -21,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/himdel/poc-components/issues"
   },
-  "homepage": "https://github.com/himdel/poc-components#readme"
+  "homepage": "https://github.com/himdel/poc-components#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
 }
