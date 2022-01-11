@@ -8,7 +8,6 @@ import {
   TitleSizes,
 } from '@patternfly/react-core';
 import PathMissingIcon from '@patternfly/react-icons/dist/js/icons/pathMissing-icon';
-import { Link } from 'react-router-dom';
 
 interface Props {
   title: string;
@@ -33,6 +32,6 @@ export const Error404: FunctionComponent<Props> = ({
     </Title>
     <EmptyStateIcon icon={PathMissingIcon} />
     <EmptyStateBody>{body}</EmptyStateBody>
-    {link && buttonText && <Link to={link}>{buttonText}</Link>}
+    {link && buttonText && <a href={link}>{buttonText}</a>}
   </EmptyState>
 );
