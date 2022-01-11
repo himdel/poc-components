@@ -24,7 +24,7 @@ export const Error404: FunctionComponent<Props> = ({
 }) => (
   <EmptyState variant={EmptyStateVariant.xl}>
     <Title
-      headingLevel="h4"
+      headingLevel='h4'
       size={TitleSizes['4xl']}
       style={{ padding: '2em' }}
     >
