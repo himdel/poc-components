@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest --verbose"
   },
   "files": [
     "/dist"
@@ -32,19 +33,37 @@
   "homepage": "https://github.com/himdel/poc-components#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-typescript": "^7.16.7",
     "@patternfly/react-core": "^4.181.1",
     "@patternfly/react-icons": "^4.32.1",
     "@storybook/addon-actions": "^6.4.10",
     "@storybook/addon-links": "^6.4.10",
     "@storybook/addons": "^5.3.22",
     "@storybook/react": "^6.4.10",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "typescript": "^4.5.4"
   },
-  "dependencies": {}
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!@redhat-cloud-services)"
+    ]
+  }
 }
