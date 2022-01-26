@@ -8,7 +8,7 @@ Components should follow these rules:
 - no router
 - no complex hooks/state
 - all human strings must be rewritable by props 
-- no css classes (or generated) if possible
+- do not pollute global CSS - it must apply to a specific component only 
 - a component should have a story and a test
 
 ## Translations
