@@ -11,6 +11,12 @@ export const WithoutButton = (props) => <Error404 {...props} />;
 WithoutButton.args = {
   title: "Hello",
   body: "World",
+  buttonText: undefined,
+  link: undefined,
+};
+WithoutButton.argTypes = {
+  buttonText: { type: 'string' },
+  link: { type: 'string' },
 };
 
 export const WithButton = () => (<Error404
