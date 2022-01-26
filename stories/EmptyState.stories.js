@@ -25,7 +25,7 @@ Filter.args = {
 };
 
 NoData.args = {
-  button: 'Upload',
+  button: <Button>Upload</Button>,
   description: 'Collections will appear once uploaded',
   title: 'No collections yet',
 };
