@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@patternfly/react-core';
-import { RebelIcon } from '@patternfly/react-icons';
+import { EmpireIcon, RebelIcon } from '@patternfly/react-icons';
 import { EmptyStateCustom } from '../src/EmptyStateCustom';
 import { EmptyStateFilter } from '../src/EmptyStateFilter';
 import { EmptyStateNoData } from '../src/EmptyStateNoData';
@@ -19,7 +19,18 @@ Custom.args = {
   button: <Button>Foobar</Button>,
   description: 'Lorem ipsum dolor',
   title: 'Quux',
-  icon: RebelIcon,
+  icon: 'Rebel',
+};
+Custom.argTypes = {
+  icon: {
+    control: 'select',
+    options: ['no icon', 'Rebel', 'Empire'],
+    mapping: {
+      'no icon': null,
+      'Rebel': RebelIcon,
+      'Empire': EmpireIcon,
+    },
+  },
 };
 
 Filter.args = {
@@ -42,7 +53,7 @@ NoData.args = {
 
 Unauthorized.args = {
   adminMessage: undefined,
-  loginLink: <Button>Foo</Button>,
+  loginLink: <Button>Login</Button>,
   title: undefined,
 };
 Unauthorized.argTypes = {
