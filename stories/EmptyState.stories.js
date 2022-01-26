@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@patternfly/react-core';
+import { RebelIcon } from '@patternfly/react-icons';
 import { EmptyStateCustom } from '../src/EmptyStateCustom';
 import { EmptyStateFilter } from '../src/EmptyStateFilter';
 import { EmptyStateNoData } from '../src/EmptyStateNoData';
@@ -18,6 +19,7 @@ Custom.args = {
   button: <Button>Foobar</Button>,
   description: 'Lorem ipsum dolor',
   title: 'Quux',
+  icon: RebelIcon,
 };
 
 Filter.args = {
