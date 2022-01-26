@@ -20,8 +20,6 @@ This repository doesn't contain any translations. But all human facing strings i
 ```
 npm install
 
-npm run build-storybook
-
 npm run storybook
 ```
 Storybook will run automatically in http://localhost:6006/
@@ -40,7 +38,7 @@ npm run test
 `npm run lint`
 
 ### Future plans
-- Add traanslations via lingui
+- Add translations via lingui
 - Add GH actions to test PRs
 - Add GH actions to auto-build and release
  
