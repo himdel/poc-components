@@ -23,7 +23,15 @@ Custom.args = {
 };
 
 Filter.args = {
+  button: undefined,
   clearAllFilters: () => console.log('cleared'),
+  description: undefined,
+  title: undefined,
+};
+Filter.argTypes = {
+  button: { type: 'string' },
+  description: { type: 'string' },
+  title: { type: 'string' },
 };
 
 NoData.args = {
@@ -33,5 +41,11 @@ NoData.args = {
 };
 
 Unauthorized.args = {
+  adminMessage: undefined,
   loginLink: <Button>Foo</Button>,
+  title: undefined,
+};
+Unauthorized.argTypes = {
+  adminMessage: { type: 'string' },
+  title: { type: 'string' },
 };
