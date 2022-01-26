@@ -21,7 +21,7 @@ export class EmptyStateCustom extends React.Component<IProps> {
 
     return (
       <EmptyState variant={EmptyStateVariant.small}>
-        <EmptyStateIcon icon={icon} />
+        {icon && <EmptyStateIcon icon={icon} />}
         <Title headingLevel='h4' size='lg'>
           {title}
         </Title>
