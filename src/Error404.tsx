@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import {
-  Title,
   EmptyState,
-  EmptyStateVariant,
-  EmptyStateIcon,
   EmptyStateBody,
+  EmptyStateIcon,
+  EmptyStateVariant,
+  Title,
   TitleSizes,
 } from '@patternfly/react-core';
 import PathMissingIcon from '@patternfly/react-icons/dist/js/icons/pathMissing-icon';
@@ -35,3 +35,9 @@ export const Error404: FunctionComponent<Props> = ({
     {link && buttonText && <a href={link}>{buttonText}</a>}
   </EmptyState>
 );
+
+Error404.defaultProps = {
+  title: '404: Page does not exist.',
+  body: "Let's find you a new one.",
+  buttonText: 'Return to home page',
+};
